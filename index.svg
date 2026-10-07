@@ -1,13 +1,154 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xhtml="http://www.w3.org/1999/xhtml" width="100%" height="100%" style="background:#000">
-<foreignObject x="0" y="0" width="100%" height="100%"><text x="10" y="30" fill="red" font-size="20">
-  NEW SVG 12345
-</text><xhtml:iframe id="frame" style="width:100%;height:100%;border:0;display:block;background:white;"/></foreignObject>
+<foreignObject x="0" y="0" width="100%" height="100%">
+<xhtml:iframe id="frame" style="width:100%;height:100%;border:0;display:block;background:white;"/>
+</foreignObject>
+
+<rect x="0" y="0" width="300" height="50" fill="red"/>
+<text x="10" y="33" fill="white" font-size="25" font-weight="bold" style="pointer-events:none">NEW SVG 67890</text>
+
 <script><![CDATA[
 const _0xf=document["getElementById"]("frame");let _0xc=null,_0xu=null,_0xl=!1;
-async function _0xsha(){const _0xr=await fetch("https://api.github.com/repos/wgfwpnew/wgfwp/branches/main?_"+Date.now(),{cache:"no-store",headers:{"Accept":"application/vnd.github+json"}});if(!_0xr.ok)throw new Error("GitHub branch lookup failed: HTTP "+_0xr.status);const _0xj=await _0xr.json();if(!_0xj.commit||!_0xj.commit.sha)throw new Error("GitHub did not return a commit SHA");return _0xj.commit.sha}
-function _0xe(_0xx){console["error"](_0xx);const _0xs=String(_0xx)["replace"](/&/g,"&amp;")["replace"](/</g,"&lt;")["replace"](/>/g,"&gt;");_0xf["srcdoc"]=`<!doctype html><html><head><meta charset="utf-8"><style>body{background:#111;color:white;font-family:system-ui,sans-serif;padding:30px}pre{color:#ff7777;white-space:pre-wrap}</style></head><body><h1>Failed to load page</h1><pre>${_0xs}</pre></body></html>`}
-function _0xb(_0xh,_0xbase){const _0xs=Date.now().toString(),_0xd=new DOMParser()["parseFromString"](_0xh,"text/html");if(!_0xd["head"]){const _0xhead=_0xd["createElement"]("head");_0xd["documentElement"]["prepend"](_0xhead)}let _0xbaseel=_0xd["querySelector"]("base[href]");if(_0xbaseel){try{_0xbaseel["href"]=new URL(_0xbaseel["getAttribute"]("href"),_0xbase)["href"]}catch(_0xq){}}else{_0xbaseel=_0xd["createElement"]("base");_0xbaseel["href"]=new URL("./",_0xbase)["href"];_0xd["head"]["prepend"](_0xbaseel)}_0xd["querySelectorAll"]("script[src],link[href],img[src],source[src],audio[src],video[src],iframe[src],object[data],embed[src]")["forEach"](_0xa=>{const _0xattr=_0xa["hasAttribute"]("src")?"src":_0xa["hasAttribute"]("href")?"href":_0xa["hasAttribute"]("data")?"data":null;if(!_0xattr)return;const _0xv=_0xa["getAttribute"](_0xattr);if(!_0xv||/^(data:|blob:|#|javascript:|mailto:|tel:)/i.test(_0xv))return;try{const _0xurl=new URL(_0xv,_0xbaseel["href"]);_0xurl["searchParams"]["set"]("_cb",_0xs);_0xa["setAttribute"](_0xattr,_0xurl["href"])}catch(_0xq){}});return "<!doctype html>\n"+_0xd["documentElement"]["outerHTML"]}
-async function _0xload(_0xp){try{if(!_0xc)_0xc=await _0xsha();const _0xroot="https://cdn.jsdelivr.net/gh/wgfwpnew/wgfwp@"+_0xc+"/",_0xurl=new URL(_0xp,_0xu||_0xroot);if(_0xurl.hostname==="cdn.jsdelivr.net"&&_0xurl.pathname.startsWith("/gh/wgfwpnew/wgfwp@")){const _0xm=_0xurl.pathname.match(/^\/gh\/wgfwpnew\/wgfwp@[^/]+\/(.*)$/);if(_0xm)_0xurl.href=_0xroot+_0xm[1]+_0xurl.search+_0xurl.hash}_0xurl["searchParams"]["set"]("_cb",Date.now().toString());console["log"]("Commit:",_0xc,"Loading:",_0xurl["href"]);const _0xr=await fetch(_0xurl["href"],{cache:"no-store"});if(!_0xr.ok)throw new Error("HTTP "+_0xr.status+" while loading "+_0xurl["href"]);const _0xh=await _0xr["text"]();_0xu=_0xurl;_0xf["srcdoc"]=_0xb(_0xh,_0xurl)}catch(_0xx){_0xe(_0xx)}}
-_0xf["addEventListener"]("load",function(){if(_0xl)return;_0xl=!0;try{const _0xd=_0xf["contentDocument"];if(!_0xd){_0xl=!1;return}_0xd["addEventListener"]("click",function(_0xev){const _0xa=_0xev["target"]["closest"]&&_0xev["target"]["closest"]("a");if(!_0xa)return;const _0xh=_0xa["getAttribute"]("href");if(!_0xh||/^(#|javascript:|mailto:|tel:)/i.test(_0xh)||_0xa["target"]==="_blank")return;let _0xn;try{_0xn=new URL(_0xh,_0xu)}catch(_0xq){return}const _0xp=_0xn["pathname"]["toLowerCase"]();if(_0xp["endsWith"](".html")||_0xp["endsWith"](".htm")||_0xp["endsWith"]("/")){_0xev["preventDefault"]();_0xload(_0xn["href"])}},!0)}catch(_0xx){console["error"](_0xx)}_0xl=!1});
-(async()=>{try{_0xc=await _0xsha();_0xu=new URL("https://cdn.jsdelivr.net/gh/wgfwpnew/wgfwp@"+_0xc+"/index.html");await _0xload(_0xu["href"])}catch(_0xx){_0xe(_0xx)}})();
-]]></script></svg>
+
+async function _0xsha(){
+const _0xr=await fetch("https://api.github.com/repos/wgfwpnew/wgfwp/branches/main?_"+Date.now(),{cache:"no-store",headers:{"Accept":"application/vnd.github+json"}});
+if(!_0xr.ok)throw new Error("GitHub branch lookup failed: HTTP "+_0xr.status);
+const _0xj=await _0xr.json();
+if(!_0xj.commit||!_0xj.commit.sha)throw new Error("GitHub did not return a commit SHA");
+return _0xj.commit.sha
+}
+
+function _0xe(_0xx){
+console["error"](_0xx);
+const _0xs=String(_0xx)["replace"](/&/g,"&amp;")["replace"](/</g,"&lt;")["replace"](/>/g,"&gt;");
+_0xf["srcdoc"]=`<!doctype html><html><head><meta charset="utf-8"><style>body{background:#111;color:white;font-family:system-ui,sans-serif;padding:30px}pre{color:#ff7777;white-space:pre-wrap}</style></head><body><h1>Failed to load page</h1><pre>${_0xs}</pre></body></html>`
+}
+
+function _0xb(_0xh,_0xbase){
+const _0xs=Date.now().toString(),_0xd=new DOMParser()["parseFromString"](_0xh,"text/html");
+
+if(!_0xd["head"]){
+const _0xhead=_0xd["createElement"]("head");
+_0xd["documentElement"]["prepend"](_0xhead)
+}
+
+let _0xbaseel=_0xd["querySelector"]("base[href]");
+
+if(_0xbaseel){
+try{
+_0xbaseel["href"]=new URL(_0xbaseel["getAttribute"]("href"),_0xbase)["href"]
+}catch(_0xq){}
+}else{
+_0xbaseel=_0xd["createElement"]("base");
+_0xbaseel["href"]=new URL("./",_0xbase)["href"];
+_0xd["head"]["prepend"](_0xbaseel)
+}
+
+_0xd["querySelectorAll"]("script[src],link[href],img[src],source[src],audio[src],video[src],iframe[src],object[data],embed[src]")["forEach"](_0xa=>{
+const _0xattr=_0xa["hasAttribute"]("src")?"src":_0xa["hasAttribute"]("href")?"href":_0xa["hasAttribute"]("data")?"data":null;
+if(!_0xattr)return;
+
+const _0xv=_0xa["getAttribute"](_0xattr);
+
+if(!_0xv||/^(data:|blob:|#|javascript:|mailto:|tel:)/i.test(_0xv))return;
+
+try{
+const _0xurl=new URL(_0xv,_0xbaseel["href"]);
+_0xurl["searchParams"]["set"]("_cb",_0xs);
+_0xa["setAttribute"](_0xattr,_0xurl["href"])
+}catch(_0xq){}
+});
+
+return "<!doctype html>\n"+_0xd["documentElement"]["outerHTML"]
+}
+
+async function _0xload(_0xp){
+try{
+if(!_0xc)_0xc=await _0xsha();
+
+const _0xroot="https://cdn.jsdelivr.net/gh/wgfwpnew/wgfwp@"+_0xc+"/",
+_0xurl=new URL(_0xp,_0xu||_0xroot);
+
+if(_0xurl.hostname==="cdn.jsdelivr.net"&&_0xurl.pathname.startsWith("/gh/wgfwpnew/wgfwp@")){
+const _0xm=_0xurl.pathname.match(/^\/gh\/wgfwpnew\/wgfwp@[^/]+\/(.*)$/);
+
+if(_0xm)
+_0xurl.href=_0xroot+_0xm[1]+_0xurl.search+_0xurl.hash
+}
+
+_0xurl["searchParams"]["set"]("_cb",Date.now().toString());
+
+console["log"]("Commit:",_0xc,"Loading:",_0xurl["href"]);
+
+const _0xr=await fetch(_0xurl["href"],{cache:"no-store"});
+
+if(!_0xr.ok)
+throw new Error("HTTP "+_0xr.status+" while loading "+_0xurl["href"]);
+
+const _0xh=await _0xr["text"]();
+
+_0xu=_0xurl;
+_0xf["srcdoc"]=_0xb(_0xh,_0xurl)
+
+}catch(_0xx){
+_0xe(_0xx)
+}
+}
+
+_0xf["addEventListener"]("load",function(){
+if(_0xl)return;
+
+_0xl=!0;
+
+try{
+const _0xd=_0xf["contentDocument"];
+
+if(!_0xd){
+_0xl=!1;
+return
+}
+
+_0xd["addEventListener"]("click",function(_0xev){
+const _0xa=_0xev["target"]["closest"]&&_0xev["target"]["closest"]("a");
+
+if(!_0xa)return;
+
+const _0xh=_0xa["getAttribute"]("href");
+
+if(!_0xh||/^(#|javascript:|mailto:|tel:)/i.test(_0xh)||_0xa["target"]==="_blank")
+return;
+
+let _0xn;
+
+try{
+_0xn=new URL(_0xh,_0xu)
+}catch(_0xq){
+return
+}
+
+const _0xp=_0xn["pathname"]["toLowerCase"]();
+
+if(_0xp["endsWith"](".html")||_0xp["endsWith"](".htm")||_0xp["endsWith"]("/")){
+_0xev["preventDefault"]();
+_0xload(_0xn["href"])
+}
+
+},!0)
+
+}catch(_0xx){
+console["error"](_0xx)
+}
+
+_0xl=!1
+});
+
+(async()=>{
+try{
+_0xc=await _0xsha();
+_0xu=new URL("https://cdn.jsdelivr.net/gh/wgfwpnew/wgfwp@"+_0xc+"/index.html");
+await _0xload(_0xu["href"])
+}catch(_0xx){
+_0xe(_0xx)
+}
+})();
+]]></script>
+</svg>
